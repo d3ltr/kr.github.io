@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный справочник IT-специалиста</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Интерактивный справочник IT-специалиста</h1>
+
+    <!-- Вкладки -->
+    <div class="tabs">
+        <button class="tab active" data-tab="frontend">Frontend-разработчик</button>
+        <button class="tab" data-tab="datascientist">Data Scientist</button>
+        <button class="tab" data-tab="devops">DevOps-инженер</button>
+    </div>
+
+    <!-- Контент -->
+    <div id="frontend" class="tab-content active">
+        <h2>Frontend-разработчик</h2>
+        <p>Frontend-разработчик — специалист, создающий визуальную и интерактивную часть веб-приложений. 
+           Он реализует интерфейсы по макетам дизайнеров, обеспечивает корректную работу на всех устройствах 
+           и интегрирует клиентскую часть с сервером.</p>
+    
+        <h3>Путь развития</h3>
+        <div class="roadmap">
+            <div class="roadmap-level">
+                <h4>Начальный уровень (Junior)</h4>
+                <ul>
+                    <li>HTML, CSS — основы разметки и стилей</li>
+                    <li>Базовый JavaScript</li>
+                    <li>Git и GitHub</li>
+                    <li>Адаптивная верстка</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Средний уровень (Middle)</h4>
+                <ul>
+                    <li>React или Vue.js</li>
+                    <li>Работа с API (REST, JSON)</li>
+                    <li>Препроцессоры (Sass)</li>
+                    <li>Сборщики (Webpack, Vite)</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Продвинутый уровень (Senior)</h4>
+                <ul>
+                    <li>Оптимизация производительности</li>
+                    <li>Архитектура SPA</li>
+                    <li>Тестирование (Jest, Cypress)</li>
+                    <li>Проектирование UX/UI</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Эксперт</h4>
+                <ul>
+                    <li>Управление командой</li>
+                    <li>Разработка масштабируемых приложений</li>
+                    <li>Менторство и обучение сотрудников</li>
+                </ul>
+            </div>
+        </div>
+    
+        <h3>Структура навыков</h3>
+        <div class="skills-grid">
+            <div class="skill core">HTML</div>
+            <div class="skill core">CSS</div>
+            <div class="skill core">JavaScript</div>
+            <div class="skill tool">React</div>
+            <div class="skill tool">Vue.js</div>
+            <div class="skill optional">Angular</div>
+            <div class="skill tool">Git</div>
+            <div class="skill optional">TypeScript</div>
+        </div>
+    
+        <h3>Основные обязанности</h3>
+        <ul>
+            <li>Разработка интерфейсов по дизайн-макетам.</li>
+            <li>Оптимизация скорости загрузки и производительности страниц.</li>
+            <li>Адаптивная и кроссбраузерная верстка.</li>
+            <li>Интеграция с backend через REST API или WebSockets.</li>
+            <li>Тестирование и исправление ошибок в клиентской части.</li>
+        </ul>
+    
+        <h3>Примеры проектов</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>Интернет-магазин</h4>
+                <p>Каталог товаров, корзина, онлайн-оплата, фильтрация по параметрам.</p>
+                <p><b>Технологии:</b> React, Tailwind CSS, Axios.</p>
+            </div>
+            <div class="project-card">
+                <h4>CRM система</h4>
+                <p>Система управления клиентами, интеграция с базой данных и аналитикой.</p>
+                <p><b>Технологии:</b> Vue.js, Bootstrap, REST API.</p>
+            </div>
+            <div class="project-card">
+                <h4>Корпоративный сайт</h4>
+                <p>Многостраничный сайт с адаптивной версткой и SEO-оптимизацией.</p>
+                <p><b>Технологии:</b> HTML, CSS, JavaScript.</p>
+            </div>
+        </div>
+    
+        <h3>Перспективы развития</h3>
+        <p>Карьерный путь Frontend-разработчика обычно начинается с позиции Junior, затем — Middle, Senior, а далее возможен рост до Team Lead или архитектора интерфейсов. 
+           Востребованность профессии остаётся высокой благодаря развитию веб-технологий и росту онлайн-сервисов.</p>
+    
+        <h3>Рекомендуемые ресурсы</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/ru/" target="_blank">MDN Web Docs</a> — документация по веб-технологиям.</li>
+            <li><a href="https://learn.javascript.ru/" target="_blank">Учебник по JavaScript</a>.</li>
+            <li><a href="https://react.dev/" target="_blank">Официальный сайт React</a>.</li>
+        </ul>
+    </div>
+    
+    
+    <div id="datascientist" class="tab-content">
+        <h2>Data Scientist</h2>
+        <p>Data Scientist — специалист, который извлекает ценную информацию из данных с помощью анализа, статистических методов и моделей машинного обучения. 
+           Он помогает компаниям принимать обоснованные решения на основе данных.</p>
+    
+        <h3>Путь развития</h3>
+        <div class="roadmap">
+            <div class="roadmap-level">
+                <h4>Начальный уровень (Junior)</h4>
+                <ul>
+                    <li>Основы Python</li>
+                    <li>Работа с данными (Pandas, NumPy)</li>
+                    <li>SQL и базовые запросы</li>
+                    <li>Основы статистики</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Средний уровень (Middle)</h4>
+                <ul>
+                    <li>Машинное обучение (scikit-learn)</li>
+                    <li>Визуализация данных (Matplotlib, Seaborn)</li>
+                    <li>Работа с большими данными (Hadoop, Spark)</li>
+                    <li>Data Cleaning и Feature Engineering</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Продвинутый уровень (Senior)</h4>
+                <ul>
+                    <li>Глубокое обучение (TensorFlow, PyTorch)</li>
+                    <li>Оптимизация моделей</li>
+                    <li>Разработка ML-пайплайнов</li>
+                    <li>Интеграция моделей в продакшен</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Эксперт</h4>
+                <ul>
+                    <li>Разработка архитектуры аналитических систем</li>
+                    <li>Руководство Data Science-командой</li>
+                    <li>Взаимодействие с бизнес-аналитиками</li>
+                </ul>
+            </div>
+        </div>
+    
+        <h3>Структура навыков</h3>
+        <div class="skills-grid">
+            <div class="skill core">Python</div>
+            <div class="skill core">Pandas</div>
+            <div class="skill core">SQL</div>
+            <div class="skill tool">scikit-learn</div>
+            <div class="skill tool">TensorFlow</div>
+            <div class="skill tool">PyTorch</div>
+            <div class="skill optional">Spark</div>
+            <div class="skill optional">R</div>
+        </div>
+    
+        <h3>Основные обязанности</h3>
+        <ul>
+            <li>Сбор и очистка данных.</li>
+            <li>Разработка и обучение моделей машинного обучения.</li>
+            <li>Визуализация данных для отчетов.</li>
+            <li>Анализ результатов и выработка рекомендаций.</li>
+            <li>Внедрение аналитических решений в рабочие процессы.</li>
+        </ul>
+    
+        <h3>Примеры проектов</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>Прогноз оттока клиентов</h4>
+                <p>Анализ данных клиентов для выявления вероятности ухода.</p>
+                <p><b>Технологии:</b> Python, scikit-learn, Power BI.</p>
+            </div>
+            <div class="project-card">
+                <h4>Система рекомендаций</h4>
+                <p>Подбор контента и товаров на основе предпочтений пользователя.</p>
+                <p><b>Технологии:</b> TensorFlow, Pandas, PostgreSQL.</p>
+            </div>
+            <div class="project-card">
+                <h4>Аналитика продаж</h4>
+                <p>Выявление трендов продаж и факторов, влияющих на доход.</p>
+                <p><b>Технологии:</b> Matplotlib, Pandas, Power BI.</p>
+            </div>
+        </div>
+    
+        <h3>Перспективы развития</h3>
+        <p>Data Scientist может перейти в роли Machine Learning Engineer, Data Engineer или руководителя аналитической команды. 
+           Востребованность профессии растёт с увеличением объёма данных в бизнесе и науке.</p>
+    
+        <h3>Рекомендуемые ресурсы</h3>
+        <ul>
+            <li><a href="https://www.kaggle.com/" target="_blank">Kaggle — соревнования по Data Science</a></li>
+            <li><a href="https://scikit-learn.org/stable/" target="_blank">Документация scikit-learn</a></li>
+            <li><a href="https://pandas.pydata.org/" target="_blank">Официальный сайт Pandas</a></li>
+        </ul>
+    </div>
+    
+
+    
+    <div id="devops" class="tab-content">
+        <h2>DevOps-инженер</h2>
+        <p>DevOps-инженер — специалист, отвечающий за автоматизацию процессов разработки и развертывания программного обеспечения, 
+           настройку инфраструктуры и мониторинг систем.</p>
+    
+        <h3>Путь развития</h3>
+        <div class="roadmap">
+            <div class="roadmap-level">
+                <h4>Начальный уровень (Junior)</h4>
+                <ul>
+                    <li>Основы Linux</li>
+                    <li>Сетевые основы</li>
+                    <li>Git и системы контроля версий</li>
+                    <li>Docker — основы контейнеризации</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Средний уровень (Middle)</h4>
+                <ul>
+                    <li>Настройка CI/CD (Jenkins, GitLab CI/CD)</li>
+                    <li>Управление конфигурациями (Ansible)</li>
+                    <li>Работа с облачными платформами (AWS, Azure)</li>
+                    <li>Мониторинг (Prometheus, Grafana)</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Продвинутый уровень (Senior)</h4>
+                <ul>
+                    <li>Оркестрация контейнеров (Kubernetes)</li>
+                    <li>Infrastructure as Code (Terraform)</li>
+                    <li>Настройка масштабируемости систем</li>
+                    <li>Обеспечение безопасности CI/CD процессов</li>
+                </ul>
+            </div>
+            <div class="roadmap-level">
+                <h4>Эксперт</h4>
+                <ul>
+                    <li>Проектирование комплексных DevOps-архитектур</li>
+                    <li>Управление командами DevOps</li>
+                    <li>Разработка внутренних инструментов автоматизации</li>
+                </ul>
+            </div>
+        </div>
+    
+        <h3>Структура навыков</h3>
+        <div class="skills-grid">
+            <div class="skill core">Linux</div>
+            <div class="skill core">Docker</div>
+            <div class="skill core">Git</div>
+            <div class="skill tool">Jenkins</div>
+            <div class="skill tool">Kubernetes</div>
+            <div class="skill tool">Ansible</div>
+            <div class="skill optional">Terraform</div>
+            <div class="skill optional">AWS</div>
+        </div>
+    
+        <h3>Основные обязанности</h3>
+        <ul>
+            <li>Настройка процессов CI/CD для автоматической сборки и развертывания.</li>
+            <li>Управление контейнерами и оркестраторами.</li>
+            <li>Мониторинг и логирование систем.</li>
+            <li>Автоматизация инфраструктуры.</li>
+            <li>Обеспечение отказоустойчивости сервисов.</li>
+        </ul>
+    
+        <h3>Примеры проектов</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>CI/CD пайплайн</h4>
+                <p>Автоматическая сборка и развертывание веб-приложения в облаке.</p>
+                <p><b>Технологии:</b> Jenkins, Docker, AWS.</p>
+            </div>
+            <div class="project-card">
+                <h4>Миграция в облако</h4>
+                <p>Перенос локальной инфраструктуры компании в облачные сервисы.</p>
+                <p><b>Технологии:</b> Terraform, AWS, Kubernetes.</p>
+            </div>
+            <div class="project-card">
+                <h4>Система мониторинга</h4>
+                <p>Реализация мониторинга состояния серверов и приложений.</p>
+                <p><b>Технологии:</b> Prometheus, Grafana.</p>
+            </div>
+        </div>
+    
+        <h3>Перспективы развития</h3>
+        <p>DevOps-инженеры могут перейти в роли архитектора инфраструктуры, инженера облачных решений или руководителя DevOps-команды. 
+           Востребованность профессии растёт с увеличением числа проектов, требующих быстрой и стабильной доставки обновлений.</p>
+    
+        <h3>Рекомендуемые ресурсы</h3>
+        <ul>
+            <li><a href="https://docs.docker.com/" target="_blank">Документация Docker</a></li>
+            <li><a href="https://kubernetes.io/ru/" target="_blank">Официальный сайт Kubernetes</a></li>
+            <li><a href="https://grafana.com/" target="_blank">Официальный сайт Grafana</a></li>
+        </ul>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html> 

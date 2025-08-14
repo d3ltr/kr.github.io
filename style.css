@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background: #007bff;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.filters {
+    margin: 15px 0;
+}
+
+.filter {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter.active {
+    background: #007bff;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 5px;
+} 
+
+.roadmap {
+    border-left: 3px solid #007bff;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.roadmap-level {
+    margin-bottom: 20px;
+}
+
+.roadmap-level h4 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.skill.core {
+    background-color: #28a745; /* зеленый */
+}
+
+.skill.tool {
+    background-color: #007bff; /* синий */
+}
+
+.skill.optional {
+    background-color: #6c757d; /* серый */
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex: 1 1 calc(33% - 10px);
+}
+
+/* Плавный переход для всех элементов */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Анимация для roadmap-элементов */
+.roadmap-level {
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.roadmap-level:hover {
+    background: #e9ecef;
+}
+
+/* Состояние раскрытия roadmap */
+.roadmap-level ul {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 20px;
+    opacity: 0;
+}
+.roadmap-level.open ul {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+/* Эффект наведения на карточки проектов */
+.project-card {
+    background: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transform: translateY(0);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Навыки с анимацией наведения */
+.skill {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.skill:hover {
+    transform: scale(1.05);
+}
